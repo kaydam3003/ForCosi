@@ -1,0 +1,200 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Fiori Gialli</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, Segoe UI, Roboto, sans-serif;
+    background: url("https://i.pinimg.com/736x/2d/b9/90/2db9908b6193be9df01c78554d404292.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  .content {
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: rgba(255, 179, 71, 0.9); 
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    color: #2b2b2b;
+    line-height: 1.6;
+  }
+
+  h1, h2 {
+    margin-top: 0;
+    color: #5a3d1e;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+</style>
+</head>
+<body>
+  <div class="content">
+    <h1>Oggi è il 21 settembre!</h1>
+    <h2>È la Giornata dei Fiori Gialli 🌼</h2>
+    <p>È una tradizione diventata popolare sui social media, soprattutto in seguito alla soap opera argentina Floricienta, in cui il protagonista sogna di ricevere fiori gialli.
+<br>
+<br><b>Cosa simboleggia regalare fiori gialli?</b>
+
+<br>È un modo per dimostrare amicizia, amore o apprezzamento per un'altra persona, possiamo concentrarci sull'amore.</p>
+
+<div style="text-align:center; margin-top:30px;">
+  <video width="500" controls autoplay loop muted style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+    <source src="C:\Users\MINEDUCYT\Desktop\Flowers\Bouquette.mp4" type="video/mp4">
+    Tu navegador no soporta videos HTML5.
+  </video>
+  <p style="margin-top:10px; font-style:italic; color:#444;">
+    Un piccolo pensiero solo per te 🌼
+  </p>
+</div>
+
+<br> <!-- Botón -->
+  <button onclick="toggleFlowers()" class="toggle-btn">
+    Mostra il significato dei fiori
+  </button>
+
+  <!-- Contenido oculto -->
+  <div id="flower-meanings" style="display:none; margin-top:15px;">
+  
+    
+<!-- Contenedor de flor -->
+<div style="display:flex; align-items:center; margin:20px 0; background:#fff8e1; padding:15px; border-radius:12px;">
+
+  <!-- Imagen -->
+  <img src="C:\Users\MINEDUCYT\Desktop\Flowers\liridraw.png" alt="Giglio" style="width:150px; height:auto; border-radius:8px; margin-right:20px;">
+
+  <!-- Texto -->
+  <div>
+    <h3 style="margin:0; color:#b37400;">Giglio</h3>
+    <p style="margin:5px 0; color:#333;">
+     Il giglio porta gioia e simboleggia la gratitudine.
+È una pianta molto resistente che si adatta a qualsiasi tipo di clima, quindi l'ottimismo fa parte del suo simbolismo
+    </p>
+  </div>
+
+</div>
+
+
+
+<!-- Contenedor de flor -->
+<div style="display:flex; align-items:center; margin:20px 0; background:#fff8e1; padding:15px; border-radius:12px;">
+
+  <!-- Imagen -->
+  <img src="C:\Users\MINEDUCYT\Desktop\Flowers\b-dragondraw.png" alt="Bocca di leone" style="width:150px; height:auto; border-radius:8px; margin-right:20px;">
+
+  <!-- Texto -->
+  <div>
+    <h3 style="margin:0; color:#b37400;">Bocca di leone</h3>
+    <p style="margin:5px 0; color:#333;">
+     Le bocche di leone sono comunemente considerate un presagio di buona fortuna, ma quando sono gialle, volevo regalartene di rosse.
+Amore e passione, energia positiva, li provo per te.
+    </p>
+  </div>
+
+</div>
+    
+
+
+<!-- Contenedor de flor -->
+<div style="display:flex; align-items:center; margin:20px 0; background:#fff8e1; padding:15px; border-radius:12px;">
+
+  <!-- Imagen -->
+  <img src="C:\Users\MINEDUCYT\Desktop\Flowers\tulipdraw.png" alt="Tulipano" style="width:150px; height:auto; border-radius:8px; margin-right:20px;">
+
+  <!-- Texto -->
+  <div>
+    <h3 style="margin:0; color:#b37400;">Tulipano</h3>
+    <p style="margin:5px 0; color:#333;">
+     I tulipani sono una scelta ricorrente; simboleggiano un sentimenti profondo. 
+Ma c'è anche un simbolismo cromatico. Il giallo cerca di trasmettere speranza e calore. 
+L'arancione cerca di trasmettere comprensione ed entusiasmo.
+    </p>
+  </div>
+
+</div>
+
+
+
+<!-- Contenedor de flor -->
+<div style="display:flex; align-items:center; margin:20px 0; background:#fff8e1; padding:15px; border-radius:12px;">
+
+  <!-- Imagen -->
+  <img src="C:\Users\MINEDUCYT\Desktop\Flowers\aistodraw.png" alt="Alstroemeriao" style="width:150px; height:auto; border-radius:8px; margin-right:20px;">
+
+  <!-- Texto -->
+  <div>
+    <h3 style="margin:0; color:#b37400;">Alstroemeria</h3>
+    <p style="margin:5px 0; color:#333;">
+     L'alstroemeria simboleggia la fiducia.
+    </p>
+  </div>
+
+</div>
+
+
+<br>
+<br>
+<p> Il <b>colore giallo</b> di ogni fiore cerca di trasmettere felicità, energia positiva, ottimismo e, in molti casi, amicizia. <b>Apprezzo la tua amicizia.</b></p>
+  </div>
+</div>
+
+<script>
+  function toggleFlowers() {
+    const box = document.getElementById("flower-meanings");
+    if (box.style.display === "none") {
+      box.style.display = "block";
+    } else {
+      box.style.display = "none";
+    }
+  }
+</script>
+
+<style>
+  .toggle-btn {
+    background-color: #ffb347; /* naranja pastel */
+    border: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: background-color 0.3s;
+  }
+  .toggle-btn:hover {
+    background-color: #e79b33;
+  }
+</style>
+  </div>
+
+
+<!-- Botón para abrir el apartado -->
+<button onclick="toggleNote()">Per l'uomo con l'aspetto di un druido 🌿</button>
+
+<!-- Apartado oculto -->
+<div id="note" style="display:none; margin-top:20px; padding:15px; background-color:#ffe0b2; border-radius:10px;">
+  <p>L'ho fatto apposta per te.</p>
+
+<p>Non potrò darti fiori veri e propri, quindi ho voluto darti questo, 
+che ho realizzato con impegno e tempo, dato che disegnarlo è stato un po' una sfida, ahah.</p>
+
+<p>Vorrei parlarti più chiaramente via chat prima di lasciarti tutto.</p>
+</div>
+
+<script>
+  function toggleNote() {
+    var note = document.getElementById('note');
+    if (note.style.display === "none") {
+      note.style.display = "block";
+    } else {
+      note.style.display = "none";
+    }
+  }
+</script>
+</body>
+</html>
